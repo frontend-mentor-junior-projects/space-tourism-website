@@ -96,6 +96,8 @@ module.exports = {
 					'test-*.{ts,tsx}',
 					// Tests where the extension or filename suffix denotes that it is a test.
 					'**/*{.,_}{test,spec,stories}.{ts,tsx}',
+					// Vite config file.
+					'vite.config.ts',
 				],
 				optionalDependencies: false,
 			},
