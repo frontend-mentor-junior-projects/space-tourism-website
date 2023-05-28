@@ -98,6 +98,8 @@ module.exports = {
 					'**/*{.,_}{test,spec,stories}.{ts,tsx}',
 					// Vite config file.
 					'vite.config.ts',
+					// Tailwind config file.
+					'tailwind.config.js',
 				],
 				optionalDependencies: false,
 			},

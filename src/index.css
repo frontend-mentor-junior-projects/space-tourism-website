@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	overflow-x: hidden;
+}
+
+.root {
+	---primary-100: '#D0D6F9';
+	---primary-200: '#0B0D17';
+	---white: '#FFFFFF';
+}
+
+@layer utilities {
+	.full-width {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+	}
+
+	.bust-out {
+		margin: 0 calc(50% - 50vw);
+	}
+
+	.animate-ease-out {
+		transition: all 300ms ease-in-out;
+	}
+
+	.skip-to-content {
+		position: absolute;
+		z-index: 9999;
+		background: var(---white);
+		color: var(---primary-200);
+		padding: 0.5em 1em;
+		margin-inline: auto;
+		transform: translateY(-100%);
+		transition: transform 250ms ease-in;
+	}
+	.skip-to-content:focus {
+		transform: translateY(0);
+	}
+}
