@@ -15,7 +15,7 @@ const HomePage = () => {
 	return (
 		<PageLayout
 			mainContentId={mainContentId}
-			className='bg-home-page-mobile md:bg-home-page-tablet lg:bg-home-page-desktop grid'
+			className='bg-primary-200 bg-home-page-mobile md:bg-home-page-tablet lg:bg-home-page-desktop grid'
 		>
 			<section className='w-full flex flex-col items-center max-w-6xl mx-auto text-center lg:text-left lg:grid lg:grid-cols-2 self-end'>
 				<div className='mb-20 lg:mb-0'>

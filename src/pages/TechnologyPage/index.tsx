@@ -23,7 +23,7 @@ const TechnologyPage = () => {
 		<PageLayout
 			mainContentId={mainContentId}
 			fullWidth
-			className='bg-technology-page-mobile md:bg-technology-page-tablet lg:bg-technology-page-desktop'
+			className='bg-primary-200 bg-technology-page-mobile md:bg-technology-page-tablet lg:bg-technology-page-desktop'
 		>
 			<section
 				id={mainContentId}

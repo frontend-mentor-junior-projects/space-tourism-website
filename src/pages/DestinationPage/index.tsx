@@ -16,7 +16,7 @@ const DestinationPage = () => {
 	return (
 		<PageLayout
 			mainContentId={mainContentId}
-			className='bg-destination-page-mobile md:bg-destination-page-tablet lg:bg-destination-page-desktop'
+			className='bg-primary-200 bg-destination-page-mobile md:bg-destination-page-tablet lg:bg-destination-page-desktop'
 		>
 			<section
 				id={mainContentId}

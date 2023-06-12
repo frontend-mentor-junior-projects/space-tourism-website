@@ -18,7 +18,7 @@ const CrewPage = () => {
 	return (
 		<PageLayout
 			mainContentId={mainContentId}
-			className='bg-crew-page-mobile md:bg-crew-page-tablet lg:bg-crew-page-desktop md:pb-0'
+			className='bg-primary-200 bg-crew-page-mobile md:bg-crew-page-tablet lg:bg-crew-page-desktop md:pb-0'
 		>
 			<section
 				id={mainContentId}
