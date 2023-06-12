@@ -15,21 +15,21 @@ const PageLayout = ({
 	fullWidth = false,
 }: PageLayoutProps) => {
 	return (
-		<main
+		<section
 			className={`min-h-screen bg-cover bg-no-repeat text-primary-100 p-6 pt-0 pb-16
       ${fullWidth ? 'px-0' : 'md:px-10 lg:px-16'}
       ${className}`}
 		>
-			<a className='skip-to-content' href={mainContentId}>
+			<a className='skip-to-content z-[9999]' href={`#${mainContentId}`}>
 				Skip to content
 			</a>
 
 			<Header />
 
-			{/* <section className='max-w-6xl mx-auto'> */}
-			{children}
-			{/* </section> */}
-		</main>
+			<main id={mainContentId} tabIndex={-1}>
+				{children}
+			</main>
+		</section>
 	)
 }
 
